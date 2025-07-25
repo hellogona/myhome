@@ -306,7 +306,12 @@
             </div>
             <div class="chat-content">
                 <div id="setting-area">
-                    <label for="api-key-input">API 키:</label>
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                        <label for="api-key-input">API 키:</label>
+                        <a href="https://aistudio.google.com/apikey" target="_blank" style="color: #667eea; text-decoration: none; font-size: 11px; padding: 4px 8px; background: white; border-radius: 12px; border: 1px solid #667eea; transition: all 0.3s ease;">
+                            🔑 API 키 발급받기
+                        </a>
+                    </div>
                     <div class="api-key-input-container">
                         <input type="password" id="api-key-input" placeholder="Gemini API 키를 입력하세요">
                         <button type="button" class="toggle-password" onclick="togglePassword()" title="API 키 표시/숨기기">
